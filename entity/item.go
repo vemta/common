@@ -2,19 +2,17 @@ package entity
 
 import (
 	"time"
-
-	"github.com/google/uuid"
 )
 
 type Item struct {
-	ID          uuid.UUID `json:"id"`
-	Title       string    `json:"title"`
-	IsGood      bool      `json:"is_good"`
-	Description string    `json:"description"`
+	ID          string `json:"id"`
+	Title       string `json:"title"`
+	IsGood      bool   `json:"is_good"`
+	Description string `json:"description"`
 }
 
 type ItemValorizationTable struct {
-	Item         uuid.UUID          `json:"item" db:"item"`
+	Item         string             `json:"item" db:"item"`
 	Discount     float64            `json:"discount" db:"discount"`
 	LastCost     float64            `json:"last_cost"`
 	LastPrice    float64            `json:"last_price"`
