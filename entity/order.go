@@ -1,8 +1,12 @@
 package entity
 
-import "github.com/vemta/common/enum"
+import (
+	"github.com/google/uuid"
+	"github.com/vemta/common/enum"
+)
 
 type Order struct {
+	ID                 uuid.UUID        `json:"id"`
 	Customer           *User            `json:"customer"`
 	Items              *[]Item          `json:"items"`
 	Price              float64          `json:"price"`
