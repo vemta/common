@@ -5,13 +5,14 @@ import (
 )
 
 type Item struct {
-	ID          string `json:"id"`
-	Title       string `json:"title"`
-	IsGood      bool   `json:"is_good"`
-	Description string `json:"description"`
+	ID          string         `json:"id"`
+	Title       string         `json:"title"`
+	IsGood      bool           `json:"is_good"`
+	Description string         `json:"description"`
+	Valuation   *ItemValuation `json:"valuation"`
 }
 
-type ItemValuationTable struct {
+type ItemValuation struct {
 	Item               string             `json:"item"`
 	DiscountRaw        float64            `json:"discount_raw"`
 	DiscountPercentual float64            `json:"discount_percentual"`
