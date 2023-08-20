@@ -1,27 +1,30 @@
 package facade
 
 type DB_Item struct {
-	ID          string `db:"id"`
-	Title       string `db:"name"`
-	Description string `db:"description"`
-	IsGood      bool   `db:"is_good"`
-	CreatedAt   string `db:"created_at"`
+	ID          string `db:"ID"`
+	Title       string `db:"Title"`
+	Description string `db:"Description"`
+	IsGood      bool   `db:"IsGood"`
+	CreatedAt   string `db:"CreatedAt"`
 }
 
-type DB_ItemValorizationTable struct {
-	Item      string  `db:"item"`
-	LastCost  float64 `db:"last_cost"`
-	LastPrice float64 `db:"last_price"`
-	Discount  float64 `db:"discount"`
+type DB_ItemValuationTable struct {
+	Item               string  `db:"Item"`
+	LastCost           float64 `db:"LastCost"`
+	LastPrice          float64 `db:"LastPrice"`
+	DiscountRaw        float64 `db:"DiscountRaw"`
+	DiscountPercentual float64 `db:"DiscountPercentual"`
 }
 
-type DB_ItemValorizationLog struct {
-	Value     float64 `db:"price"`
-	UpdatedAt string  `db:"updated_at"`
+type DB_ItemValuationLog struct {
+	Price              float64 `db:"Price"`
+	DiscountRaw        float64 `db:"DiscountRaw"`
+	DiscountPercentual float64 `db:"DiscountPercentual"`
+	UpdatedAt          string  `db:"UpdatedAt"`
 }
 
 type DB_ItemTaxes struct {
-	Name       string  `db:"name"`
-	Percentual float64 `db:"percentual"`
-	RawValue   float64 `db:"raw_value"`
+	Name       string  `db:"Name"`
+	Percentual float64 `db:"Percentual"`
+	RawValue   float64 `db:"RawValue"`
 }
