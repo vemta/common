@@ -11,6 +11,7 @@ type DB_Order struct {
 }
 
 type DB_OrderDetail struct {
-	Order string `db:"order"`
-	Item  string `db:"item"`
+	Order    string `db:"order"`
+	Item     string `db:"item"`
+	Quantity int    `db:"quantity"`
 }

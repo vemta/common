@@ -14,3 +14,8 @@ type Order struct {
 	DiscountPercentual float64          `json:"discount_percentual"`
 	Status             enum.OrderStatus `json:"status"`
 }
+
+type OrderDetail struct {
+	Item     *Item `json:"item"`
+	Quantity int   `json:"quantity"`
+}
