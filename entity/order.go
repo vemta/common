@@ -6,7 +6,7 @@ import (
 
 type Order struct {
 	ID                 string           `json:"id"`
-	Customer           *User            `json:"customer"`
+	Customer           *Customer        `json:"customer"`
 	Items              *[]OrderEntry    `json:"items"`
 	Price              float64          `json:"price"`
 	PaymentMethod      int              `json:"payment_method"`
