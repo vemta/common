@@ -9,6 +9,7 @@ type Item struct {
 	Title       string         `json:"title"`
 	IsGood      bool           `json:"is_good"`
 	Description string         `json:"description"`
+	Category    *ItemCategory  `json:"category"`
 	Valuation   *ItemValuation `json:"valuation"`
 }
 
