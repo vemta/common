@@ -19,7 +19,7 @@ type ItemValuation struct {
 	DiscountPercentual float64            `json:"discount_percentual"`
 	LastCost           float64            `json:"last_cost"`
 	LastPrice          float64            `json:"last_price"`
-	UpdateAt           time.Time          `json:"updated_at"`
+	UpdatedAt          time.Time          `json:"updated_at"`
 	PriceHistory       []ItemValuationLog `json:"price_history"`
 	CostHistory        []ItemValuationLog `json:"cost_history"`
 }
