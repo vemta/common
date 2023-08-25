@@ -7,3 +7,7 @@ type Customer struct {
 	FullName  string    `json:"full_name"`
 	Birthdate time.Time `json:"birthdate"`
 }
+
+type CustomerContact struct {
+	Cellphone string `json:"cellphone"`
+}
