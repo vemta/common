@@ -28,4 +28,6 @@ var (
 		ID:   0x02,
 		Name: "TED",
 	}
+
+	AvailablePaymentMethods = [...]PaymentMethod{PIX, Boleto, PayPal, TED}
 )
