@@ -8,3 +8,7 @@ const (
 	Delivered
 	Finished
 )
+
+func IsValid(value int) bool {
+	return value <= int(Finished)
+}
