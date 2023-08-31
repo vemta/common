@@ -9,6 +9,6 @@ const (
 	Finished
 )
 
-func IsValid(value int) bool {
+func IsOrderStatusValid(value int) bool {
 	return value <= int(Finished)
 }
