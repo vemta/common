@@ -1,6 +1,6 @@
-package enum
+package orderstatus
 
-type OrderStatus = uint8
+type OrderStatus uint8
 
 const (
 	WaitingPaymentApproval OrderStatus = iota
