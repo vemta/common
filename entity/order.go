@@ -14,6 +14,8 @@ type Order struct {
 }
 
 type OrderEntry struct {
-	Item     *Item `json:"item"`
-	Quantity int64 `json:"quantity"`
+	Item               *Item   `json:"item"`
+	DiscountRaw        float64 `json:"item_discount_raw"`
+	DiscountPercentual float64 `json:"item_discount_percentual"`
+	Quantity           int64   `json:"quantity"`
 }
