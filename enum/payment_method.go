@@ -31,3 +31,12 @@ var (
 
 	AvailablePaymentMethods = [...]PaymentMethod{PIX, Boleto, PayPal, TED}
 )
+
+func GetPaymentMethod(id int) *PaymentMethod {
+	for _, p := range AvailablePaymentMethods {
+		if p.ID == id {
+			return &p
+		}
+	}
+	return nil
+}
