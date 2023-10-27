@@ -1,4 +1,4 @@
-package orderstatus
+package enum
 
 type OrderStatus uint8
 

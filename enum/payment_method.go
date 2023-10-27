@@ -1,4 +1,4 @@
-package payment
+package enum
 
 type PaymentMethod struct {
 	ID                 int
