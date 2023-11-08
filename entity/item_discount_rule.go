@@ -7,16 +7,8 @@ import (
 )
 
 type ItemDiscountRule struct {
-	ID                 string
-	Name               string
-	Items              []string
-	DiscountRaw        float64
-	DiscountPercentual float64
-	ApplyFirst         string // raw | percentual
-	AboveValue         float64
-	BellowValue        float64
-	ValidFrom          time.Time
-	ValidUntil         time.Time
+	DiscountRule
+	Items []string
 }
 
 func (d *ItemDiscountRule) TryApply(item *Item) (bool, float64) {

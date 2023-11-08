@@ -4,11 +4,15 @@ type OrderStatus uint8
 
 const (
 	WaitingPaymentApproval OrderStatus = iota
-	PaymentApproved
-	Delivered
-	Finished
+	WaitingConfirmation
+	ToBeShipped
+	Shipped
+	WaitingDeliverConfirmation
+	Canceled
+	ToReturn
+	Completed
 )
 
 func IsOrderStatusValid(value int) bool {
-	return value <= int(Finished)
+	return value <= int(Completed)
 }
