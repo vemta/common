@@ -1,6 +1,7 @@
 package entity
 
 type DiscountCode struct {
-	DiscountRule
+	DiscountRuleInterface
+	*DiscountRule
 	Code string
 }

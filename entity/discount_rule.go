@@ -14,3 +14,5 @@ type DiscountRule struct {
 	ValidUntil         time.Time
 	Type               rune // (O)rder, (I)tem, (C)ode
 }
+
+type DiscountRuleInterface interface{}

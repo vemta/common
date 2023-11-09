@@ -5,7 +5,8 @@ import (
 )
 
 type OrderDiscountRule struct {
-	DiscountRule
+	DiscountRuleInterface
+	*DiscountRule
 }
 
 func (d *OrderDiscountRule) TryApply(order *Order) float64 {

@@ -7,7 +7,8 @@ import (
 )
 
 type ItemDiscountRule struct {
-	DiscountRule
+	DiscountRuleInterface
+	*DiscountRule
 	Items []string
 }
 
