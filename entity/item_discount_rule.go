@@ -7,6 +7,7 @@ import (
 )
 
 type ItemDiscountRule struct {
+	DiscountRule
 	ID                 string
 	Name               string
 	DiscountRaw        float64
