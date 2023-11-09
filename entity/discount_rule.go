@@ -4,6 +4,8 @@ import "time"
 
 type DiscountRule struct {
 	ID                 string
+	Code               string
+	AutoApply          bool
 	Name               string
 	DiscountRaw        float64
 	DiscountPercentual float64
