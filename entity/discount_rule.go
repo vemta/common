@@ -12,4 +12,5 @@ type DiscountRule struct {
 	BellowValue        float64
 	ValidFrom          time.Time
 	ValidUntil         time.Time
+	Type               rune // (O)rder, (I)tem, (C)ode
 }
